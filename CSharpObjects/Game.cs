@@ -30,15 +30,6 @@ namespace CSharpObjects
                 Console.WriteLine("The point is out of bounds");
             }
 
-            if (map.OnMap(point2) == true)
-            {
-                Console.WriteLine("The point is within the area.");
-            }
-            else
-            {
-                Console.WriteLine("The point is out of bounds");
-            }
-
             Console.WriteLine(point1.DistanceTo(point2));
 
             Console.ReadKey();
