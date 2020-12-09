@@ -8,9 +8,15 @@ namespace CSharpObjects
 {
     class Game
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Tower tower = new Tower();
+            Map map = new Map(5, 7);
+
+            int area = map.Width * map.Height;
+
+            Console.WriteLine(area);
+
+            Console.ReadKey();
         }
     }
 }

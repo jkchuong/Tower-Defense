@@ -7,7 +7,7 @@
     <ProjectGuid>{2249BDBE-BE2C-48FA-A037-C006CED5E961}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>CSharpObjects</RootNamespace>
-    <AssemblyName>CSharpObjects</AssemblyName>
+    <AssemblyName>Tower-Defense</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Invader.cs" />
     <Compile Include="Map.cs" />
+    <Compile Include="Path.cs" />
     <Compile Include="Tower.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
