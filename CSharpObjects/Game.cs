@@ -11,8 +11,8 @@ namespace CSharpObjects
         public static void Main(string[] args)
         {
             Map map = new Map(8, 5);
-            Point point1 = new Point(10, 1);
-            Point point2 = new Point(4, 4);
+            MapLocation point1 = new MapLocation(10, 1);
+            MapLocation point2 = new MapLocation(4, 4);
 
             int area = map.Width * map.Height;
 
