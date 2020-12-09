@@ -23,6 +23,7 @@ namespace CSharpObjects
 
         }
 
+        // Method Overload
         public int DistanceTo(Point point)
         {
             return DistanceTo(point.X, point.Y);
