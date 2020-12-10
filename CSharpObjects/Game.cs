@@ -16,9 +16,17 @@ namespace CSharpObjects
             {
                 MapLocation point1 = new MapLocation(10, 1, map);
             }
-            catch(Exception ex)
+            catch(OutOfBoundsException ex)
             {
                 Console.WriteLine(ex);
+            }
+            catch(TowerDefenseException ex)
+            {
+                Console.WriteLine("Unhandled TowerDefenseException.");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Unhandled Exception.");
             }
 
 
