@@ -8,6 +8,6 @@ namespace CSharpObjects
 {
     class Invader
     {
-
+        public MapLocation Location { get; private set; }
     }
 }

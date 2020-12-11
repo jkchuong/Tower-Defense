@@ -28,12 +28,11 @@ namespace CSharpObjects
                     }
                  );
 
-                MapLocation location = path.GetLocationAt(8);
+                Invader invader = new Invader();
+                MapLocation location = new MapLocation(0, 0, map);
 
-                if (location != null)
-                {
-                    Console.WriteLine(location.X + "," + location.Y);
-                }
+
+                location = invader.Location;
 
 
             }
@@ -52,14 +51,6 @@ namespace CSharpObjects
 
 
             int area = map.Width * map.Height;
-
-            string[] favouriteThings = new string[3];
-
-            Console.WriteLine(favouriteThings);
-
-            favouriteThings[1] = "sunshine";
-
-            Console.WriteLine(favouriteThings[1]);
 
             Console.ReadKey();
         }
