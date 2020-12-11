@@ -28,11 +28,8 @@ namespace CSharpObjects
                     }
                  );
 
-                Invader invader = new Invader();
                 MapLocation location = new MapLocation(0, 0, map);
 
-
-                location = invader.Location;
 
 
             }
