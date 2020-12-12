@@ -30,8 +30,6 @@ namespace CSharpObjects
 
                 MapLocation location = new MapLocation(0, 0, map);
 
-
-
             }
             catch(OutOfBoundsException ex)
             {

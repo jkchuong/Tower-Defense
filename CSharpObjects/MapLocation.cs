@@ -15,5 +15,10 @@ namespace CSharpObjects
                 throw new OutOfBoundsException(x + "," + y + " is out of bounds.");
             }
         }
+
+        public bool InRangeOf(MapLocation location, int range)
+        {
+            return DistanceTo(location) <= range;
+        }
     }
 }

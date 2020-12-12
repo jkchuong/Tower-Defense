@@ -21,5 +21,8 @@ namespace CSharpObjects
         {
             return (pathStep < _path.Length) ? _path[pathStep] : null;
         }
+
+
+        }
     }
 }
