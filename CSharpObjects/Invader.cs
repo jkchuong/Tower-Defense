@@ -27,6 +27,12 @@ namespace CSharpObjects
 
         // Method. Stuff you can do to Invader. Methods have brackets.
         public void Move() => _pathStep += 1;
-        public void Damage(int factor) => Health -= factor;
+
+        // Virtual means one instance of  implementation
+        public virtual void Damage(int factor)
+        {
+            Health -= factor;
+            Console.WriteLine("Hit invader.");
+        }
     }
 }

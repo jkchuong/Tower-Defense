@@ -35,7 +35,7 @@ namespace CSharpObjects
                     if (IsSuccessfulShot())
                     {
                         invader.Damage(_power);
-                        Console.WriteLine("Hit invader.");
+                        
                         if (invader.IsDead)
                         {
                             Console.WriteLine("Killed invader.");
