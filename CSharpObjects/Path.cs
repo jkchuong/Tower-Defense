@@ -22,7 +22,9 @@ namespace CSharpObjects
             return (pathStep < _path.Length) ? _path[pathStep] : null;
         }
 
-
+        public bool OnPath(MapLocation location)
+        {
+            return _path.Contains(location);
         }
     }
 }
