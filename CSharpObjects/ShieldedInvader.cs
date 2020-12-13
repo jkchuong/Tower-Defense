@@ -22,6 +22,7 @@ namespace CSharpObjects
             if (_random.NextDouble() < 0.5)
             {
                 base.Damage(factor);
+                Console.WriteLine("Hit Shielded Invader");
             }
             else
             {

@@ -12,9 +12,12 @@ namespace CSharpObjects
         private readonly Path _path;
         private int _pathStep = 0;
 
+        // Access to subclasses.
+        protected virtual int StepSize { get; } = 1;
+
         // Property. Info about Invader. Properties always return value.
         public MapLocation Location => _path.GetLocationAt(_pathStep);
-        public int Health { get; private set; } = 2;
+        public virtual int Health { get; protected set; } = 2;
         public bool HasScored { get { return _pathStep >= _path.Length; } }
         public bool IsDead => Health <= 0;
         public bool IsAlive => !(IsDead || HasScored);
@@ -26,13 +29,13 @@ namespace CSharpObjects
         }
 
         // Method. Stuff you can do to Invader. Methods have brackets.
-        public void Move() => _pathStep += 1;
+        public void Move() => _pathStep += StepSize;
 
-        // Virtual means one instance of  implementation
+        // Virtual means one instance of implementation
         public virtual void Damage(int factor)
         {
             Health -= factor;
-            Console.WriteLine("Hit invader.");
+            Console.WriteLine("Hit Invader.");
         }
     }
 }
