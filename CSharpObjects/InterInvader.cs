@@ -26,7 +26,7 @@ namespace CSharpObjects
 
         bool IsDead { get; }
 
-        bool IsAlive { get; 
+        bool IsAlive { get; }
 
         void Damage(int factor);
     }
