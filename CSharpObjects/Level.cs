@@ -8,10 +8,10 @@ namespace CSharpObjects
 {
     class Level
     {
-        private readonly Invader[] _invaders;
+        private readonly InterInvader[] _invaders;
         public Tower[] Towers { get; set; }
 
-        public Level(Invader[] invaders)
+        public Level(InterInvader[] invaders)
         {
             _invaders = invaders;
         }
@@ -32,7 +32,7 @@ namespace CSharpObjects
                 }
                 // Count and move the invaders that are still active
                 remainingInvaders = 0;
-                foreach(Invader invader in _invaders)
+                foreach(InterInvader invader in _invaders)
                 {
                     if (invader.IsAlive)
                     {

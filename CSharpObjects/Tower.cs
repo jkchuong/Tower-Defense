@@ -26,9 +26,9 @@ namespace CSharpObjects
             return _random.NextDouble() < Accuracy;
         }
 
-        public void FireOnInvaders(Invader[] invaders)
+        public void FireOnInvaders(InterInvader[] invaders)
         {
-            foreach (Invader invader in invaders)
+            foreach (InterInvader invader in invaders)
             {
                 if(invader.IsAlive && _location.InRangeOf(invader.Location, Range))
                 {

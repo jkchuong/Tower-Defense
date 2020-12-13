@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace CSharpObjects
 {
-    class FastInvader : Invader
+    class BasicInvader : Invader
     {
-        public FastInvader(Path path) : base(path)
+        public BasicInvader(Path path) : base(path)
         { }
-
-        protected override int StepSize { get; } = 2;
 
         public override int Health { get; protected set; } = 2;
 
         public override void Damage(int factor)
         {
             Health -= factor;
-            Console.WriteLine("Hit Fast Invader");
+            Console.WriteLine("Hit Basic Invader");
         }
     }
 }

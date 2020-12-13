@@ -15,6 +15,7 @@ namespace CSharpObjects
             
         }
 
+        public override int Health { get; protected set; } = 2;
 
         // Polymorphism
         public override void Damage(int factor)

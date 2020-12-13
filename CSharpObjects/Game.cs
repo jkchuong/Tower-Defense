@@ -30,17 +30,10 @@ namespace CSharpObjects
 
                 MapLocation location = new MapLocation(0, 2, map);
 
-                if (path.IsOnPath(location))
-                {
-                    Console.WriteLine(location + " is on the path");
-                    Console.ReadKey();
-                    return;
-                }
-
                 Invader[] invaders =
                 {
                     new FastInvader(path),
-                    new Invader(path),
+                    new BasicInvader(path),
                     new StrongInvader(path),
                     new ShieldedInvader(path)
                 };

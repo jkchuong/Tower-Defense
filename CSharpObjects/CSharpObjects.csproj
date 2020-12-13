@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicInvader.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="FastInvader.cs" />
+    <Compile Include="InterInvader.cs" />
     <Compile Include="Invader.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="LongTower.cs" />
