@@ -44,7 +44,7 @@ namespace CSharpObjects
                     new PowerTower(new MapLocation(3, 3, map)),
                     new LongTower(new MapLocation(4, 3, map)),
                     new PowerTower(new MapLocation(5, 3, map)),
-                    new PowerTower(new MapLocation(6, 3, map))
+                    new Tower(new MapLocation(1, 1, map))
                 };
 
                 Level level = new Level(invaders)

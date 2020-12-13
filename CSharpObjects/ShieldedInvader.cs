@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace CSharpObjects
 {
     class ShieldedInvader : Invader
-    {
-        private static Random _random = new Random();
-
+    { 
         public ShieldedInvader(Path path) : base(path)
         {
             
@@ -20,7 +18,7 @@ namespace CSharpObjects
         // Polymorphism
         public override void Damage(int factor)
         {
-            if (_random.NextDouble() < 0.5)
+            if (Random.NextDouble() < 0.5)
             {
                 base.Damage(factor);
                 Console.WriteLine("Hit Shielded Invader");

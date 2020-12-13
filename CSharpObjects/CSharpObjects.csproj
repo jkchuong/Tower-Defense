@@ -55,6 +55,7 @@
     <Compile Include="Path.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="PowerTower.cs" />
+    <Compile Include="Random.cs" />
     <Compile Include="ResInvader.cs" />
     <Compile Include="ShieldedInvader.cs" />
     <Compile Include="StrongInvader.cs" />
