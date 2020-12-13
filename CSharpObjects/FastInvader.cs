@@ -12,6 +12,11 @@ namespace CSharpObjects
         { }
 
         protected override int StepSize { get; } = 2;
-        
+
+        public override void Damage(int factor)
+        {
+            Health -= factor;
+            Console.WriteLine("Hit Fast Invader");
+        }
     }
 }

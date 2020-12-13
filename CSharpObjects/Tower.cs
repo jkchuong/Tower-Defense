@@ -38,12 +38,12 @@ namespace CSharpObjects
                         
                         if (invader.IsDead)
                         {
-                            Console.WriteLine("Killed invader.");
+                            Console.WriteLine("Killed invader at " + invader.Location);
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Missed invader.");
+                        Console.WriteLine("Missed invader");
                     }
                     break;
                 }

@@ -12,7 +12,7 @@ namespace CSharpObjects
         {
             if (!map.OnMap(this))
             {
-                throw new OutOfBoundsException(x + "," + y + " is out of bounds.");
+                throw new OutOfBoundsException(this + " is out of bounds.");
             }
         }
 

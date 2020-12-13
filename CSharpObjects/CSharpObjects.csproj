@@ -47,11 +47,14 @@
     <Compile Include="FastInvader.cs" />
     <Compile Include="Invader.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="LongTower.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MapLocation.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="Point.cs" />
+    <Compile Include="PowerTower.cs" />
     <Compile Include="ShieldedInvader.cs" />
+    <Compile Include="StrongInvader.cs" />
     <Compile Include="Tower.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

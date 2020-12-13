@@ -28,11 +28,20 @@ namespace CSharpObjects
                     }
                  );
 
+                MapLocation location = new MapLocation(0, 2, map);
+
+                if (path.IsOnPath(location))
+                {
+                    Console.WriteLine(location + " is on the path");
+                    Console.ReadKey();
+                    return;
+                }
+
                 Invader[] invaders =
                 {
+                    new FastInvader(path),
                     new Invader(path),
-                    new Invader(path),
-                    new Invader(path),
+                    new StrongInvader(path),
                     new ShieldedInvader(path)
                 };
 
@@ -40,8 +49,8 @@ namespace CSharpObjects
                 {
                     new Tower(new MapLocation(1, 3, map)),
                     new Tower(new MapLocation(3, 3, map)),
-                    new Tower(new MapLocation(5, 3, map)),
-                    new Tower(new MapLocation(7, 3, map))
+                    new PowerTower(new MapLocation(5, 3, map)),
+                    new LongTower(new MapLocation(7, 3, map))
                 };
 
                 Level level = new Level(invaders)

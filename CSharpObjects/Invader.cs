@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CSharpObjects
 {
-    class Invader
+    // Abstract base class
+    abstract class Invader
     {
         // Fields. Things that Invader has.
         private readonly Path _path;
@@ -35,7 +36,7 @@ namespace CSharpObjects
         public virtual void Damage(int factor)
         {
             Health -= factor;
-            Console.WriteLine("Hit Invader.");
+            Console.WriteLine("Hit Invader");
         }
     }
 }

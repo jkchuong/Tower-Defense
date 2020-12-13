@@ -14,5 +14,11 @@ namespace CSharpObjects
         }
 
         public override int Health { get; protected set; } = 4;
+
+        public override void Damage(int factor)
+        {
+            Health -= factor;
+            Console.WriteLine("Hit Strong Invader");
+        }
     }
 }
